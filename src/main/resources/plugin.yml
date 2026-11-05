@@ -1,0 +1,22 @@
+name: BedrockRiser
+description: Makes bedrock rise (Inspiration from FlowKool's video) DO NOT USE ON IMPORTANT WORLDS!
+version: '1.0'
+
+main: duck.bedrockriser.BedrockRiser
+api-version: '1.20'
+load: STARTUP
+
+authors: [ Quackerx ]
+website: https://discord.gg/tchc7vfqUH
+
+commands:
+  bedrockriser:
+    description: Control the rising bedrock
+    usage: /<command> <status|rise|reset|reload>
+    aliases: [brise]
+    permission: bedrockrise.admin
+
+permissions:
+  bedrockriser.admin:
+    description: Use all BedrockRise commands
+    default: op

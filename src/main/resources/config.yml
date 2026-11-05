@@ -1,0 +1,45 @@
+#  BedrockRise config
+#  After editing run /bedrockrise reload (or restart).
+
+# Worlds the bedrock rises in (folder/world names).
+# Nether or End are NOT recommended, this is made for the overworld for now!
+worlds:
+  - world
+
+# How often the bedrock rises, in server ticks
+# 24000 ticks = 1 Minecraft day = 20 real minutes (default)
+# 1200 = 1 minute, 72000 = 1 hour
+rise-interval-ticks: 24000
+
+# The Y level where the rising starts from.
+# auto = vanilla bedrock top for that world
+# or put any number, e.g. -60
+start-height: auto
+
+# Bedrock will never rise above this Y level
+max-height: 20
+
+# How many blocks the bedrock rises every time
+blocks-per-rise: 1
+
+# How "scattered" the top edge is. The top layer of the rising bedrock
+# is sparse and every layer below gets denser until it's solid
+# 5 = vanilla-like (20% / 40% / 60% / 80% / 100%)
+# 1 = flat solid layer, no scattering
+scatter-layers: 5
+
+# If true, the countdown only runs while someone is in that world
+# Great if server is 24/7 and players play only at a certain time
+pause-when-empty: false
+
+# Performance: how many chunks get modified per tick
+# Lower = less lag but slower to apply, higher = faster
+# Tweak this for your server
+chunks-per-tick: 2
+
+# Warn players when the bedrock rises
+alarm:
+  enabled: false
+  # Color codes work with both & and § (example &4 or §4).
+  # Placeholders: {world} {height} {old_height} {blocks}
+  message: "&4&lWARNING! &cThe bedrock has risen to &eY={height}&c!"
