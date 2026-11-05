@@ -3,6 +3,9 @@ Does exactly as the name implies.
 
 - Makes the bedrock rise (Inspiration from FlowKool's video) DO NOT USE ON IMPORTANT WORLDS (OR SERVER)!
 
+### DOWNLOAD THE BUILT VERSION FROM MODRINTH:
+- *Insert link when accepted*
+
 ## COMMANDS:
 - /bedrockriser OR /brise
 
